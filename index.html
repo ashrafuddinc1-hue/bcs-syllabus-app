@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCS অধ্যয়ন | Pro Model</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn back-btn" id="backBtn" aria-label="পেছনে" title="পেছনে">←</button>
+    <button class="brand" id="homeBtn" aria-label="মূল পাতা">
+      <span class="brand-mark">বি</span>
+      <span><strong>BCS</strong><small>অধ্যয়ন</small></span>
+    </button>
+    <div class="top-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="খুঁজুন" title="খুঁজুন">⌕</button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="অপশন মেনু" title="অপশন">⋮</button>
+    </div>
+  </header>
+
+  <div class="search-wrap" id="searchWrap">
+    <input id="searchInput" type="search" placeholder="অধ্যায় বা বিষয় খুঁজুন…" autocomplete="off">
+  </div>
+
+  <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+    <div class="menu-head"><strong>পঠন সেটিংস</strong><button class="icon-btn" id="menuClose">×</button></div>
+    <div class="setting-row"><span>ফন্ট সাইজ</span><div><button data-font="-1">A−</button><b id="fontValue">18</b><button data-font="1">A+</button></div></div>
+    <div class="setting-row"><span>স্ক্রিনের থিম</span><div class="theme-list">
+      <button class="theme-dot light" data-theme="light" title="Light"></button>
+      <button class="theme-dot sepia" data-theme="sepia" title="Sepia"></button>
+      <button class="theme-dot dark" data-theme="dark" title="Dark"></button>
+    </div></div>
+    <button class="menu-action" id="bookmarkBtn">☆ বুকমার্ক সংরক্ষণ</button>
+    <button class="menu-action" id="printBtn">⎙ পেজ প্রিন্ট / PDF</button>
+  </aside>
+
+  <main id="app" class="app"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
